@@ -26,12 +26,6 @@ class Student(id: String?, name: String?, email: String?, birthDate: Date?) : Pe
         return false
     }
 
-    // CHALLENGE IMPLEMENTATION: Read README.md to find instructions on how to solve.
-    fun findPassedCourses(course: Course?): List<Course>? {
-        //TODO implement this method
-        return null
-    }
-
     fun isAttendingCourse(courseCode: String?): Boolean {
         //TODO implement this method
         return false
