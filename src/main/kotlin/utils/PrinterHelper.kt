@@ -16,11 +16,10 @@ object PrinterHelper {
         println("| Select 1 option:              |")
         println("| . 1 Register Student          |")
         println("| . 2 Find Student              |")
-        println("| . 3 Grade Student             |")
-        println("| . 4 Enroll Student to Course  |")
-        println("| . 5 Show Students Summary     |")
-        println("| . 6 Show Courses Summary      |")
-        println("| . 7 Exit                      |")
+        println("| . 3 Enroll Student to Course  |")
+        println("| . 4 Show Students Summary     |")
+        println("| . 5 Show Courses Summary      |")
+        println("| . 6 Exit                      |")
         println("|-------------------------------|")
     }
 
