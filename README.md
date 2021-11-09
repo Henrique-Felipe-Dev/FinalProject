@@ -61,7 +61,7 @@ Dica: Para exibir o sumário (que nesse caso, serão os estudantes que já foram
 
 * Crie um novo estudante
 * Cadastra o estudante em alguns cursos.
-* Use a opção de ShowCourseShow the students and courses summary and verify that data is correct.
+* Use a opção de Show Student Summary e Show Course Summary para verificar se está tudo ok
 
 
 ## Parte 4: Lidando com Exceções
