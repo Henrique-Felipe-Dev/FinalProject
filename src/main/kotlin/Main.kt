@@ -21,12 +21,11 @@ object Main {
             when (option) {
                 1 -> registerStudent(studentService, scanner)
                 2 -> findStudent(studentService, scanner)
-                3 -> gradeStudent(studentService, scanner)
-                4 -> enrollStudentToCourse(studentService, courseService, scanner)
-                5 -> showStudentsSummary(studentService, scanner)
-                6 -> showCoursesSummary(courseService, scanner)
+                3 -> enrollStudentToCourse(studentService, courseService, scanner)
+                4 -> showStudentsSummary(studentService, scanner)
+                5 -> showCoursesSummary(courseService, scanner)
             }
-        } while (option != 7)
+        } while (option != 6)
     }
 
     private fun enrollStudentToCourse(
@@ -62,7 +61,6 @@ object Main {
         studentService.showSummary()
     }
 
-    private fun gradeStudent(studentService: StudentService, scanner: Scanner) {}
     private fun findStudent(studentService: StudentService, scanner: Scanner) {
         println("Enter student ID: ")
         val studentId = scanner.next()
