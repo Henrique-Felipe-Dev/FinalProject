@@ -4,21 +4,21 @@
 
  <br/>  
  
- It's time to see how much you learned about Kotlin and Object Oriented Programming.
+ É hora de vermos o quanto você aprendeu sobre Kotlin e Programação Orientada a Objetos
 
  
 
-## Part 1: Understanding the StudentGen project
+## Parte 1: Entendendo o projeto Estudante
 
-1. Download the source code and import the project using IntelliJ Idea or any other IDE you prefer.
-2. Understand the project stucture:
-* Packages
+1. Baixe o código fonte deste projeto e importe para dentro do IntelliJ
+2. Entenda a estrutura do projeto:
+* Pacotes
 * Classes
-* Functionality
-3. Run and test the project to get a deeper undertanding of how it works (remember the persistence mindset!).
+* Funcionalidades
+3. Execute o projeto e o teste para um entendimento maior de como o projeto funciona (lembre da Mentalidade de Persistência)
 
-## Part 2: Implementing the Student and StudentService missing features
-1. Open the Student class ```(src/com/generation/model/Student.kt)``` and implement the following methods:
+## Parte 2: implementando o que falta na classe Student e StudentService 
+1. Abra a classe Student ```(src/com/generation/model/Student.kt)``` e implemente os seguintes métodos:
 
 ```kotlin=
 fun enrollToCourse(course: Course?) {
@@ -41,7 +41,7 @@ fun getApprovedCourses(): List<Course?>? {
 }
 
 ```
-2. Open the StudentService class ```(src/com/generation/service/StudentService.kt)``` and implement the following methods:
+2. Abra a classe StudentService ```(src/com/generation/service/StudentService.kt)``` e implemente os seguintes métodos:
 ```Kotlin=
 fun isSubscribed(studentId: String?): Boolean {
     //TODO implement this method
@@ -52,33 +52,26 @@ fun showSummary() {
     //TODO implement
 }
 ```
-Hint: To show the summary use System.out.println() to print out to the console.
+Dica: Para exibir o sumário (que nesse caso, serão os estudantes que já foram inscritos), use o println()
 
 
-## Part 3: Implementing the missing main method features
+## Parte 3: Implementando os métodos que faltam no Main
 
-1. Implement the method to ```gradeStudent(studentService: StudentService, scanner: Scanner)``` in ```src/com/generation/Main.kt``` to have a fully functional program.
+1. Teste o programa e verifica se funciona como o esperado:
 
-2. Test the program to verify it works as expected:
-
-* Create a new student.
-* Enrroll the student to few courses.
-* Grade the student.
-* Show the students and courses summary and verify that data is correct.
+* Crie um novo estudante
+* Cadastra o estudante em alguns cursos.
+* Use a opção de ShowCourseShow the students and courses summary and verify that data is correct.
 
 
-## Part 4: Handling exceptions
+## Parte 4: Lidando com Exceções
 
-1. Register a new user providing a wrong date format.
-2. Modify the createStudentMenu so it handles correctly the exception when a wrong date format is inserted by the user.
-3. Catch the exception and show a proper message to the user.
+1. Registre um novo usuário, passando uma data incorreta.
+2. Verifique o erro que acontece após rodar o programa
+3. Acesse a classe PinterHelper e modifique o método createStudentMenu, para lidar com a exceção que ocorre quando o usuário insere uma data incorreta.
+4. Mostre uma mensagem de erro para o usuário após conseguir lidar com a Exceção, além de atribuir uma data padrão para a variável birthDate, para não quebrar o programa.
 
-## Part 5: Writing Unit Tests
-1. Write 2 Unit tests for the class StudentService
-2. Write 2 Unit tests for the class CourseService
-
-## Challenge Yourself
-
-1. Implement a way to store grades for each course a student is taking. There should be a way to update/set the score. Afterwards, fill in the ```fun findPassedCourses(course: Course?): List<Course?>?``` method in Student.kt
-2. Implement an additional feature in the menu options that will display the average grade of all the students suscribed to a given course.
+## Parte 5: Escrevendo Testes Unitários
+1. Escreva ao menos 1 teste unitário para a classe StudentService
+2. Escreva ao menos 1 teste unitário para a classe CourseService
 
